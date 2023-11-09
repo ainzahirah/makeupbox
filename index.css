@@ -1,0 +1,209 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg,rgb(225, 177, 236),rgb(255, 194, 204));
+  margin: 0;
+  padding: 0;
+}
+/* Style for the table */
+table {
+  width: 40%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+/* Style for table rows */
+tr {
+  background-color: #f2f2f2;
+}
+
+/* Style for table data cells */
+td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Style for table header cells */
+th {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+  background-color: #ff6ed1;
+  color: #fff;
+  text-align: center;
+}
+
+/* Style for the product list */
+ul#productList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 10px; /* Gap between grid items */
+}
+/* Style for each product list item */
+ul#productList li {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+p {
+  font-family: arial;
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+}
+/* Style for the "Search" button */
+button {
+  background-color: #ff5acb;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from its parent */
+}
+b {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from its parent */
+}
+button:hover {
+  background-color: #ff79d5;
+}
+/* Style for the button create */
+#btnCreate {
+  background-color: #ff83e8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* Style for the button read */
+#btnRead{
+  background-color: #ff83e8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* Style for the button delete */
+#btnDelete{
+  background-color: #ff83e8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* Style for the button update */
+#btnUpdate{
+  background-color: #ff83e8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* Style for the input field and dropdown */
+input[type="text"],
+select {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #ff8edb;
+  border-radius: 5px;
+  margin: 5px;
+}
+.navbar{
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+.navbar ul li::after{
+  content: '';
+  height: 4px;
+  width: 0;
+  background: rgb(239, 168, 251);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 80%;
+}
+/* Style for the "Hello" heading */
+h1 {
+  color: #fefefe;
+  font-style: bold;
+  font-size: 40px;
+}
+/* Style for header */
+header {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  right: 0;
+  background-color: #ff89da; 
+  padding: 0; 
+  z-index: 100;
+}
+
+/* Style for error message */
+#productList:empty::before {
+  color: #797979;
+  display: block;
+  margin: 10px;
+  position: center;
+}
+
+/* Style for API fetch error message */
+#productList:empty::before {
+  color: #999999;
+  display: block;
+  margin: 10px;
+}
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button styles */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

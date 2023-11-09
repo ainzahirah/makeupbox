@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="fetchapi.js"></script> <!-- Include your JavaScript file -->
+  </head>
+  <body>
+    <header>
+      <center>
+        <h1> BeautyBloom 💋✨</h1>
+        <p>Welcome to BeautyBloom, your one-stop destination for all things beauty and makeup.</p>
+      </center>
+      <div class="navbar">
+        <ul>
+          <li><a href="fetchapi.html">Home</a></li>
+          <li><a href="crud.html">Top 5</a></li>
+        </ul>
+      </div>
+    </header>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <center>
+      <input type="text" id="searchData" placeholder="Enter product brand"> <!-- Input field for brand -->
+      <select id="searchData2"> <!-- Dropdown for product type -->
+        <option value="">Select One</option>
+        <option value="blush">Blush</option>
+        <option value="bronzer">Bronzer</option>
+        <option value="foundation">Foundation</option>
+        <option value="eyebrow">Eyebrow</option>
+        <option value="eyeliner">Eyeliner</option>
+        <option value="eyeshadow">Eyeshadow</option>
+        <option value="lipliner">Lipliner</option>
+        <option value="lipstick">Lipstick</option>
+        <option value="mascara">Mascara</option>
+        <option value="nailpolish">Nail Polish</option>
+      </select>
+      <p id="productType"></p> <!-- Placeholder for product type display -->
+      <button onclick="buttonClicked()">Search</button> <!-- Button to trigger the search function -->
+    </center>
+    <ul id="productList"></ul> <!-- Placeholder for displaying product list -->
+  </body>
+</html>

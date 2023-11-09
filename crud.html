@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>CRUD App</title>
+<link rel="stylesheet" href="index.css"/> <!-- Include external CSS file -->
+</head>
+<body>
+  <header>
+    <center>
+      <h1> BeautyBloom 💋✨</h1> <!-- Page title -->
+      <p>Welcome to BeautyBloom, your one-stop destination for all things beauty and makeup.</p> <!-- Page description -->
+    </center>
+    <div class="navbar">
+      <ul>
+        <li><a href="fetchapi.html">Home</a></li> <!-- Navigation link to Home page -->
+        <li><a href="crud.html">Top 5</a></li> <!-- Navigation link to Top 5 page (current page) -->
+      </ul>
+    </div>
+  </header>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <center>
+    <div class="mainWrapper">
+      <h1>Top 5 Makeup</h1> <!-- Main title for CRUD operations -->
+      <form>
+        <div class="form-group">
+          <label>File name</label>
+          <input id="fileName" type="text" class="form-control" value="makeup.txt" disabled>
+          <!-- Input field for file name (disabled, with a default value) -->
+          <button id="btnCreate" class="btn btn-default">Create</button>
+          <!-- Create button for creating files -->
+        </div>
+        <br>
+        <textarea id="fileContents" class="form-control" rows="5"></textarea>
+        <!-- Textarea for entering file contents -->
+      </div>
+    </form>
+    <br> 
+    <button id="btnRead" class="btn btn-default">Read</button>
+    <!-- Read button for reading file contents -->
+    <button id="btnUpdate" class="btn btn-default">Update</button>
+    <!-- Update button for updating file contents -->
+  </div>
+  <br><br>
+  <table id="fileContents">
+    <thead> 
+      <tr>
+        <th>Top 5 Makeup List</th> <!-- Table header for product list -->
+        <th>Delete</th> <!-- Table header for deletion of products -->
+      </tr>
+    </thead>
+    <tbody id="fileTableBody"></tbody> <!-- Placeholder for displaying product list -->
+  </table>
+  </center>
+  <script src="crud.js">
+  </script>
+</body>
+</html>
